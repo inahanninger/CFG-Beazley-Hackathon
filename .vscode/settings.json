@@ -1,0 +1,4 @@
+{
+    "javascript.suggest.includeCompletionsForImportStatements": false,
+    "typescript.preferences.importModuleSpecifier": "relative"
+}
