@@ -137,7 +137,7 @@ export default function SectionNavbars() {
           className={classes.navigation}
           style={{ backgroundImage: "url(" + image + ")" }}
         >
-          <Header
+          {/* <Header
             brand="Brand"
             color="rose"
             leftLinks={
@@ -185,8 +185,8 @@ export default function SectionNavbars() {
                 </Button>
               </div>
             }
-          />
-          <Header
+          /> */}
+          {/* <Header
             brand="Info Color"
             color="info"
             rightLinks={
@@ -223,7 +223,7 @@ export default function SectionNavbars() {
                 </ListItem>
               </List>
             }
-          />
+          /> */}
           <Header
             brand="Primary Color"
             color="primary"
@@ -262,7 +262,7 @@ export default function SectionNavbars() {
               </List>
             }
           />
-          <Header
+          {/* <Header
             brand="Navbar with notifications"
             color="dark"
             rightLinks={
@@ -426,7 +426,7 @@ export default function SectionNavbars() {
                 </ListItem>
               </List>
             }
-          />
+          /> */}
         </div>
       </div>
     </div>

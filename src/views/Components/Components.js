@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Material Kit React"
+        brand="Avertech"
         rightLinks={<HeaderLinks />}
         fixed
         color="transparent"
@@ -48,14 +48,14 @@ export default function Components(props) {
         }}
         {...rest}
       />
-      <Parallax image={require("assets/img/bg4.jpg").default}>
+      <Parallax image={require("assets/img/avertechbg.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Material Kit React.</h1>
+                <h1 className={classes.title}>Avertech</h1>
                 <h3 className={classes.subtitle}>
-                  A Badass Material-UI Kit based on Material Design.
+                  Reaching net zero together for our planet.
                 </h3>
               </div>
             </GridItem>
@@ -64,16 +64,14 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionBasics />
-        <SectionNavbars />
+        {/* <SectionBasics />
         <SectionTabs />
-        <SectionPills />
-        <SectionNotifications />
-        <SectionTypography />
-        <SectionJavascript />
+        <SectionPills /> */}
+        {/* <SectionNotifications />
+        <SectionJavascript /> */}
         <SectionCarousel />
-        <SectionCompletedExamples />
-        <SectionLogin />
+        {/* <SectionCompletedExamples /> */}
+        {/* <SectionLogin /> */}
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -81,8 +79,8 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
+        <SectionNavbars />
+        {/* <SectionExamples /> */}
       </div>
       <Footer />
     </div>

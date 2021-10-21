@@ -21,7 +21,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/bg7.jpg";
+import image from "assets/img/avertechbg2.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -37,7 +37,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="Material Kit React"
+        brand="Avertech"
         rightLinks={<HeaderLinks />}
         {...rest}
       />
@@ -129,7 +129,7 @@ export default function LoginPage(props) {
                         endAdornment: (
                           <InputAdornment position="end">
                             <Icon className={classes.inputIconsColor}>
-                              lock_outline
+                              {/* lock_outline */}
                             </Icon>
                           </InputAdornment>
                         ),
