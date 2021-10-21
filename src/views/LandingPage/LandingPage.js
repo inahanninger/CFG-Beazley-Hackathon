@@ -14,6 +14,8 @@ import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
+import List from "@material-ui/core/List";
+import ListItem from "@material-ui/core/ListItem";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
@@ -34,7 +36,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="Material Kit React"
+        brand="AverTech"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{

@@ -25,7 +25,7 @@ import { Lock, LockOpen } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
-export default function LoginPage(props) {
+export default function RegistrationPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   setTimeout(function () {
     setCardAnimation("");
@@ -51,12 +51,9 @@ export default function LoginPage(props) {
       >
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={40} sm={40} md={30}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
-                  <CardHeader color="primary" className={classes.cardHeader}>
-                    <h4>Company Login</h4>
-                  </CardHeader>
                   <CardBody>
                     <CustomInput
                       labelText="Company Username"
@@ -108,7 +105,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button color="rose">Login</Button>
+                    <Button color="rose"> Register Now </Button>
                   </CardFooter>
                 </form>
               </Card>
