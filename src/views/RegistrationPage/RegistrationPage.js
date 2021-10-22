@@ -20,16 +20,12 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-<<<<<<< HEAD
-import image from "assets/img/avertechbg2.jpg";
-=======
 import image from "assets/img/bg7.jpg";
 import { Lock, LockOpen } from "@material-ui/icons";
->>>>>>> cd69db80c0e99148aef0ce5705f96b72b5f2015a
 
 const useStyles = makeStyles(styles);
 
-export default function LoginPage(props) {
+export default function RegistrationPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
   setTimeout(function () {
     setCardAnimation("");
@@ -41,11 +37,7 @@ export default function LoginPage(props) {
       <Header
         absolute
         color="transparent"
-<<<<<<< HEAD
-        brand="Avertech"
-=======
         brand="AverTech"
->>>>>>> cd69db80c0e99148aef0ce5705f96b72b5f2015a
         rightLinks={<HeaderLinks />}
         {...rest}
       />
@@ -59,12 +51,9 @@ export default function LoginPage(props) {
       >
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem xs={12} sm={12} md={4}>
+            <GridItem xs={40} sm={40} md={30}>
               <Card className={classes[cardAnimaton]}>
                 <form className={classes.form}>
-                  <CardHeader color="primary" className={classes.cardHeader}>
-                    <h4>Company Login</h4>
-                  </CardHeader>
                   <CardBody>
                     <CustomInput
                       labelText="Company Username"
@@ -107,11 +96,7 @@ export default function LoginPage(props) {
                         endAdornment: (
                           <InputAdornment position="end">
                             <Icon className={classes.inputIconsColor}>
-<<<<<<< HEAD
-                              {/* lock_outline */}
-=======
                               <Lock className={classes.inputIconsColor} />
->>>>>>> cd69db80c0e99148aef0ce5705f96b72b5f2015a
                             </Icon>
                           </InputAdornment>
                         ),
@@ -120,7 +105,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button color="rose">Login</Button>
+                    <Button color="rose"> Register Now </Button>
                   </CardFooter>
                 </form>
               </Card>

@@ -10,7 +10,11 @@ import Components from "./views/Components/Components.js";
 import LandingPage from "./views/LandingPage/LandingPage.js";
 import ProfilePage from "./views/ProfilePage/ProfilePage.js";
 import LoginPage from "./views/LoginPage/LoginPage.js";
+<<<<<<< HEAD
 import RegisterPage from "views/RegisterPage/RegisterPage.js";
+=======
+import RegistrationPage from './views/RegistrationPage/RegistrationPage.js';
+>>>>>>> cd69db80c0e99148aef0ce5705f96b72b5f2015a
 
 var hist = createBrowserHistory();
 
@@ -21,6 +25,7 @@ ReactDOM.render(
       <Route path="/profile-page" component={ProfilePage} />
       <Route path="/register-page" component={RegisterPage} />
       <Route path="/login-page" component={LoginPage} />
+      <Route path="/registration" component={RegistrationPage}></Route>
       <Route path="/" component={Components} />
     </Switch>
   </Router>,

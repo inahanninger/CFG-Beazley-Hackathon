@@ -26,6 +26,7 @@ export default function HeaderLinks(props) {
   const classes = useStyles();
   return (
     <List className={classes.list}>
+<<<<<<< HEAD
       <ListItem className={classes.listItem}>
         <CustomDropdown
           noLiPadding
@@ -129,6 +130,39 @@ export default function HeaderLinks(props) {
           </Button>
         </Tooltip>
       </ListItem> */}
+=======
+        <ListItem className={classes.listItem}>
+            <Button
+              href="#pablo"
+              className={classes.navLink}
+              onClick={(e) => e.preventDefault()}
+              color="transparent"
+            >
+              Discover
+            </Button>
+          </ListItem>
+          <ListItem className={classes.listItem}>
+            <Button
+              href="#pablo"
+              className={classes.navLink}
+              onClick={(e) => e.preventDefault()}
+              color="transparent"
+            >
+              About
+            </Button>
+          </ListItem>
+          <ListItem className={classes.listItem}>
+            <Button
+              href="#pablo"
+              className={classes.registerNavLink}
+              onClick={(e) => e.preventDefault()}
+              color="rose"
+              round
+            >
+              Register
+            </Button>
+          </ListItem>
+>>>>>>> cd69db80c0e99148aef0ce5705f96b72b5f2015a
     </List>
   );
 }
