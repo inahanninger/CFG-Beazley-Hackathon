@@ -73,7 +73,7 @@ export default function RegistrationPage(props) {
       <Header
         absolute
         color="transparent"
-        brand="avertech"
+        brand="Avertech"
         rightLinks={<HeaderLinks />}
         {...rest}
       />
@@ -87,7 +87,7 @@ export default function RegistrationPage(props) {
       >
         <div className={classes.container}>
           <GridContainer justify="center">
-            <GridItem xs={10} sm={10} md={50}>
+            <GridItem xs={10} sm={8} md={50}>
               <Card className={classes[cardAnimaton]}>
                 <ThemeProvider theme={theme}>
                     <Container component="main" maxWidth="xs">
@@ -183,7 +183,7 @@ export default function RegistrationPage(props) {
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                        <Link href="#" variant="body2">
+                        <Link href="/login-page" variant="body2">
                             Already have an account? Sign in
                         </Link>
                         </Grid>

@@ -1,25 +1,36 @@
 import { container, title } from "assets/jss/material-kit-react.js";
 
 const landingPageStyle = {
-  container: {
-    zIndex: "12",
+  container,
+  brand: {
     color: "#FFFFFF",
-    ...container,
+    textAlign: "left",
   },
   title: {
-    ...title,
+    fontSize: "4.2rem",
+    fontWeight: "600",
     display: "inline-block",
     position: "relative",
-    marginTop: "30px",
-    minHeight: "32px",
-    color: "#FFFFFF",
-    textDecoration: "none",
   },
   subtitle: {
     fontSize: "1.313rem",
     maxWidth: "500px",
-    margin: "10px auto 0",
+    margin: "10px 0 0",
   },
+  // title: {
+  //   ...title,
+  //   display: "inline-block",
+  //   position: "relative",
+  //   marginTop: "30px",
+  //   minHeight: "32px",
+  //   color: "#FFFFFF",
+  //   textDecoration: "none",
+  // },
+  // subtitle: {
+  //   fontSize: "1.313rem",
+  //   maxWidth: "500px",
+  //   margin: "10px auto 0",
+  // },
   main: {
     background: "#FFFFFF",
     position: "relative",

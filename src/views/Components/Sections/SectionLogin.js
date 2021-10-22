@@ -108,7 +108,7 @@ export default function SectionLogin() {
                       endAdornment: (
                         <InputAdornment position="end">
                           <Icon className={classes.inputIconsColor}>
-                            lock_outline
+                            {/* lock_outline */}
                           </Icon>
                         </InputAdornment>
                       ),

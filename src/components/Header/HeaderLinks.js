@@ -1,5 +1,6 @@
 /*eslint-disable*/
 import React from "react";
+import { useHistory } from "react-router-dom";
 import DeleteIcon from "@material-ui/icons/Delete";
 import IconButton from "@material-ui/core/IconButton";
 // react components for routing our app without refresh
@@ -24,8 +25,36 @@ const useStyles = makeStyles(styles);
 
 export default function HeaderLinks(props) {
   const classes = useStyles();
+  const history = useHistory();
+
+  function handleClick() {
+    history.push("/registration");
+  }
   return (
     <List className={classes.list}>
+      <ListItem className={classes.listItem}>
+        <CustomDropdown
+          noLiPadding
+          buttonText="About us"
+          buttonProps={{
+            className: classes.navLink,
+            color: "transparent",
+          }}
+          buttonIcon={Apps}
+          dropdownList={[
+            <Link to="/" className={classes.dropdownLink}>
+              How it started
+            </Link>,
+            <a
+              href=""
+              target="_blank"
+              className={classes.dropdownLink}
+            >
+              Get involved
+            </a>,
+          ]}
+        />
+      </ListItem>
         <ListItem className={classes.listItem}>
             <Button
               href="#pablo"
@@ -38,19 +67,9 @@ export default function HeaderLinks(props) {
           </ListItem>
           <ListItem className={classes.listItem}>
             <Button
-              href="#pablo"
-              className={classes.navLink}
-              onClick={(e) => e.preventDefault()}
-              color="transparent"
-            >
-              About
-            </Button>
-          </ListItem>
-          <ListItem className={classes.listItem}>
-            <Button
-              href="#pablo"
+              href="/registration"
               className={classes.registerNavLink}
-              onClick={(e) => e.preventDefault()}
+              onClick={() => handleClick}
               color="rose"
               round
             >

@@ -36,7 +36,7 @@ export default function LandingPage(props) {
       <Header
         color="transparent"
         routes={dashboardRoutes}
-        brand="AverTech"
+        brand="Avertech"
         rightLinks={<HeaderLinks />}
         fixed
         changeColorOnScroll={{
@@ -45,28 +45,16 @@ export default function LandingPage(props) {
         }}
         {...rest}
       />
-      <Parallax filter image={require("assets/img/landing-bg.jpg").default}>
+      <Parallax image={require("assets/img/avertechbg.jpeg")}>
         <div className={classes.container}>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={6}>
-              <h1 className={classes.title}>Your Story Starts With Us.</h1>
-              <h4>
-                Every landing page needs a small description after the big bold
-                title, that{"'"}s why we added this text here. Add here all the
-                information that can make you or your product create the first
-                impression.
-              </h4>
-              <br />
-              <Button
-                color="danger"
-                size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="fas fa-play" />
-                Watch video
-              </Button>
+            <GridItem>
+              <div className={classes.brand}>
+                <h1 className={classes.title}>Avertech</h1>
+                <h3 className={classes.subtitle}>
+                  Reaching net zero together for our planet.
+                </h3>
+              </div>
             </GridItem>
           </GridContainer>
         </div>
