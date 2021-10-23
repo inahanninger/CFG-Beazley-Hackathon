@@ -90,41 +90,36 @@ export default function RegistrationPage(props) {
             <GridItem xs={10} sm={8} md={50}>
               <Card className={classes[cardAnimaton]}>
                 <ThemeProvider theme={theme}>
-                  <Container component="main" maxWidth="xs">
-                    <CssBaseline />
-                    <Box
-                      sx={{
-                        marginTop: 8,
-                        display: "flex",
-                        flexDirection: "column",
-                        alignItems: "center",
-                      }}
-                    >
-                      <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
-                        {/* <LockOutlinedIcon /> */}
-                      </Avatar>
-                      <Typography component="h1" variant="h5">
-                        Sign up
-                      </Typography>
-                      <Box
-                        component="form"
-                        noValidate
-                        onSubmit={handleSubmit}
-                        sx={{ mt: 3 }}
-                      >
-                        <Grid container spacing={2}>
-                          <Grid item xs={20} sm={6}>
-                            <TextField
-                              autoComplete="given-name"
-                              name="firstName"
-                              required
-                              fullWidth
-                              id="firstName"
-                              label="First Name"
-                              autoFocus
-                            />
-                          </Grid>
-                          <Grid item xs={20} sm={6}>
+                    <Container component="main" maxWidth="xs">
+                <CssBaseline />
+                <Box
+                    sx={{
+                    marginTop: 8,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    alignItems: 'center',
+                    }}
+                >
+                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                    {/* <LockOutlinedIcon /> */}
+                    </Avatar>
+                    <Typography component="h1" variant="h5">
+                    Sign up
+                    </Typography>
+                    <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
+                    <Grid container spacing={2}>
+                        <Grid item xs={20} sm={6}>
+                        <TextField
+                            autoComplete="given-name"
+                            name="firstName"
+                            required
+                            fullWidth
+                            id="firstName"
+                            label="Company Name"
+                            autoFocus
+                        />
+                        </Grid>
+                        <Grid item xs={20} sm={6}>
                             <FormControl fullWidth>
                               <InputLabel id="demo-simple-select-label">
                                 Industry
