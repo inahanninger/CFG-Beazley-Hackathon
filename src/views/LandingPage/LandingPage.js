@@ -18,6 +18,7 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
+import SectionCarousel from "../Components/Sections/SectionCarousel.js";
 
 // Sections for this page
 import ProductSection from "./Sections/ProductSection.js";
@@ -62,8 +63,9 @@ export default function LandingPage(props) {
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
           <ProductSection />
-          <TeamSection />
+          {/* <TeamSection /> */}
           <WorkSection />
+          <SectionCarousel />
         </div>
       </div>
       <Footer />

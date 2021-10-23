@@ -9,7 +9,7 @@ const styles = {
   grid: {
     position: "relative",
     width: "100%",
-    minHeight: "1px",
+    minHeight: "3px",
     paddingRight: "15px",
     paddingLeft: "15px",
     flexBasis: "auto",

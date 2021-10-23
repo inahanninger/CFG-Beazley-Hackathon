@@ -17,23 +17,23 @@ import CardBody from "components/Card/CardBody.js";
 import CardHeader from "components/Card/CardHeader.js";
 import CardFooter from "components/Card/CardFooter.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
-import Avatar from '@mui/material/Avatar';
-import CssBaseline from '@mui/material/CssBaseline';
-import TextField from '@mui/material/TextField';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
-import Link from '@mui/material/Link';
-import Grid from '@mui/material/Grid';
-import Box from '@mui/material/Box';
-import InputLabel from '@mui/material/InputLabel';
-import MenuItem from '@mui/material/MenuItem';
-import Select from '@mui/material/Select';
-import Typography from '@mui/material/Typography';
-import Container from '@mui/material/Container';
-import FormControl from '@mui/material/FormControl';
-import { styled } from '@mui/material/styles';
+import Avatar from "@material-ui/core/Avatar";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import TextField from "@material-ui/core/TextField";
+import FormControlLabel from "@material-ui/core/FormControlLabel";
+import Checkbox from "@material-ui/core/Checkbox";
+import Link from "@material-ui/core/Link";
+import Grid from "@material-ui/core/Grid";
+import Box from "@material-ui/core/Box";
+import InputLabel from "@material-ui/core/InputLabel";
+import MenuItem from "@material-ui/core/MenuItem";
+import Select from "@material-ui/core/Select";
+import Typography from "@material-ui/core/Typography";
+import Container from "@material-ui/core/Container";
+import FormControl from "@material-ui/core/FormControl";
+import { styled } from "@material-ui/core/styles";
 
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
@@ -41,9 +41,9 @@ import image from "assets/img/turbines.jpg";
 
 const useStyles = makeStyles(styles);
 const theme = createTheme();
-const Input = styled('input')({
-    display: 'none',
-  });
+const Input = styled("input")({
+  display: "none",
+});
 
 export default function RegistrationPage(props) {
   const [cardAnimaton, setCardAnimation] = React.useState("cardHidden");
@@ -64,8 +64,8 @@ export default function RegistrationPage(props) {
     const data = new FormData(event.currentTarget);
     // eslint-disable-next-line no-console
     console.log({
-      email: data.get('email'),
-      password: data.get('password'),
+      email: data.get("email"),
+      password: data.get("password"),
     });
   };
   return (
@@ -77,7 +77,7 @@ export default function RegistrationPage(props) {
         rightLinks={<HeaderLinks />}
         {...rest}
       />
-        <div
+      <div
         className={classes.pageHeader}
         style={{
           backgroundImage: "url(" + image + ")",
@@ -90,74 +90,81 @@ export default function RegistrationPage(props) {
             <GridItem xs={10} sm={8} md={50}>
               <Card className={classes[cardAnimaton]}>
                 <ThemeProvider theme={theme}>
-                    <Container component="main" maxWidth="xs">
-                <CssBaseline />
-                <Box
-                    sx={{
-                    marginTop: 8,
-                    display: 'flex',
-                    flexDirection: 'column',
-                    alignItems: 'center',
-                    }}
-                >
-                    <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                    {/* <LockOutlinedIcon /> */}
-                    </Avatar>
-                    <Typography component="h1" variant="h5">
-                    Sign up
-                    </Typography>
-                    <Box component="form" noValidate onSubmit={handleSubmit} sx={{ mt: 3 }}>
-                    <Grid container spacing={2}>
-                        <Grid item xs={20} sm={6}>
-                        <TextField
-                            autoComplete="given-name"
-                            name="firstName"
-                            required
-                            fullWidth
-                            id="firstName"
-                            label="First Name"
-                            autoFocus
-                        />
-                        </Grid>
-                        <Grid item xs={20} sm={6}>
+                  <Container component="main" maxWidth="xs">
+                    <CssBaseline />
+                    <Box
+                      sx={{
+                        marginTop: 8,
+                        display: "flex",
+                        flexDirection: "column",
+                        alignItems: "center",
+                      }}
+                    >
+                      <Avatar sx={{ m: 1, bgcolor: "secondary.main" }}>
+                        {/* <LockOutlinedIcon /> */}
+                      </Avatar>
+                      <Typography component="h1" variant="h5">
+                        Sign up
+                      </Typography>
+                      <Box
+                        component="form"
+                        noValidate
+                        onSubmit={handleSubmit}
+                        sx={{ mt: 3 }}
+                      >
+                        <Grid container spacing={2}>
+                          <Grid item xs={20} sm={6}>
+                            <TextField
+                              autoComplete="given-name"
+                              name="firstName"
+                              required
+                              fullWidth
+                              id="firstName"
+                              label="First Name"
+                              autoFocus
+                            />
+                          </Grid>
+                          <Grid item xs={20} sm={6}>
                             <FormControl fullWidth>
-                            <InputLabel id="demo-simple-select-label">Industry</InputLabel>
-                            <Select
+                              <InputLabel id="demo-simple-select-label">
+                                Industry
+                              </InputLabel>
+                              <Select
                                 labelId="demo-simple-select-label"
                                 id="demo-simple-select"
                                 value={industry}
                                 label="Industry"
                                 onChange={handleChange}
-                            >
-                            <MenuItem value={10}>Agriculture</MenuItem>
-                            <MenuItem value={20}>Automotive</MenuItem>
-                            <MenuItem value={30}>Banks</MenuItem>
-                            <MenuItem value={30}>Banks</MenuItem>
-                            </Select>
+                              >
+                                <MenuItem value={10}>Agriculture</MenuItem>
+                                <MenuItem value={20}>Automotive</MenuItem>
+                                <MenuItem value={30}>Banks</MenuItem>
+                                <MenuItem value={30}>Banks</MenuItem>
+                              </Select>
                             </FormControl>
-                        </Grid>
-                        <Grid item xs={20}>
-                        <TextField
-                            required
-                            fullWidth
-                            id="email"
-                            label="Email Address"
-                            name="email"
-                            autoComplete="email"
-                        />
-                        </Grid>
-                        <Grid item xs={12}>
-                        <TextField
-                            required
-                            fullWidth
-                            name="password"
-                            label="Password"
-                            type="password"
-                            id="password"
-                            autoComplete="new-password"
-                        />
-                        </Grid>
-                        {/* <Grid item xs={20} sm={6}>
+                          </Grid>
+                          <Grid item xs={20}>
+                            <TextField
+                              required
+                              fullWidth
+                              id="email"
+                              label="Email Address"
+                              name="email"
+                              autoComplete="email"
+                            />
+                          </Grid>
+                          <Grid item xs={12}>
+                            <TextField
+                              required
+                              fullWidth
+                              name="password"
+                              label="Password"
+                              type="password"
+                              id="password"
+                              autoComplete="new-password"
+                            />
+                          </Grid>
+                          {/* <Grid item xs={20} sm={6}>
                         Please upload your dataset
                         </Grid>
                         <Grid item xs={12} sm={6}>
@@ -166,31 +173,36 @@ export default function RegistrationPage(props) {
                                     Upload
                                 </Button>
                         </Grid> */}
-                        <Grid item xs={12}>
-                        <FormControlLabel
-                            control={<Checkbox value="allowExtraEmails" color="primary" />}
-                            label="I want to receive inspiration, marketing promotions and updates via email."
-                        />
+                          <Grid item xs={12}>
+                            <FormControlLabel
+                              control={
+                                <Checkbox
+                                  value="allowExtraEmails"
+                                  color="primary"
+                                />
+                              }
+                              label="I want to receive inspiration, marketing promotions and updates via email."
+                            />
+                          </Grid>
                         </Grid>
-                    </Grid>
-                    <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        sx={{ mt: 3, mb: 2 }}
-                    >
-                        Sign Up
-                    </Button>
-                    <Grid container justifyContent="flex-end">
-                        <Grid item>
-                        <Link href="/login-page" variant="body2">
-                            Already have an account? Sign in
-                        </Link>
+                        <Button
+                          type="submit"
+                          fullWidth
+                          variant="contained"
+                          sx={{ mt: 3, mb: 2 }}
+                        >
+                          Sign Up
+                        </Button>
+                        <Grid container justifyContent="flex-end">
+                          <Grid item>
+                            <Link href="/login-page" variant="body2">
+                              Already have an account? Sign in
+                            </Link>
+                          </Grid>
                         </Grid>
-                    </Grid>
+                      </Box>
                     </Box>
-                </Box>
-                    </Container>
+                  </Container>
                 </ThemeProvider>
               </Card>
             </GridItem>
