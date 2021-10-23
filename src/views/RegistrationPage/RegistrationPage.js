@@ -115,7 +115,7 @@ export default function RegistrationPage(props) {
                             required
                             fullWidth
                             id="firstName"
-                            label="First Name"
+                            label="Company Name"
                             autoFocus
                         />
                         </Grid>
