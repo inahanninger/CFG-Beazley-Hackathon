@@ -119,7 +119,7 @@ export default function RegistrationPage(props) {
                             autoFocus
                         />
                         </Grid>
-                        <Grid item xs={20} sm={6}>
+                        <Grid item xs={12} sm={6}>
                             <FormControl fullWidth>
                               <InputLabel id="demo-simple-select-label">
                                 Industry
@@ -134,11 +134,13 @@ export default function RegistrationPage(props) {
                                 <MenuItem value={10}>Agriculture</MenuItem>
                                 <MenuItem value={20}>Automotive</MenuItem>
                                 <MenuItem value={30}>Banks</MenuItem>
-                                <MenuItem value={30}>Banks</MenuItem>
+                                <MenuItem value={30}>Insurance</MenuItem>
+                                <MenuItem value={30}>Tech</MenuItem>
+                                <MenuItem value={30}>Restaurants</MenuItem>
                               </Select>
                             </FormControl>
                           </Grid>
-                          <Grid item xs={20}>
+                          <Grid item xs={12}>
                             <TextField
                               required
                               fullWidth

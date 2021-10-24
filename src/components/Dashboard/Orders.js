@@ -8,43 +8,44 @@ import TableRow from '@mui/material/TableRow';
 import Title from './Title';
 
 // Generate Order Data
-function createData(id, date, name, shipTo, paymentMethod, amount) {
-  return { id, date, name, shipTo, paymentMethod, amount };
+function createData(id, date, name, link, amount) {
+  return { id, date, name, link, amount };
 }
 
 const rows = [
   createData(
     0,
-    '16 Mar, 2019',
-    'Elvis Presley',
-    'Tupelo, MS',
-    'VISA ⠀•••• 3719',
+    '16 Mar, 2020',
+    'Transmission and Distribution',
+    'Transmission-and-distribution.csv',
     312.44,
   ),
   createData(
     1,
-    '16 Mar, 2019',
-    'Paul McCartney',
-    'London, UK',
-    'VISA ⠀•••• 2574',
+    '19 Jun, 2020',
+    'Business and Travel - air & sea',
+    'Business-travel.csv',
     866.99,
   ),
-  createData(2, '16 Mar, 2019', 'Tom Scholz', 'Boston, MA', 'MC ⠀•••• 1253', 100.81),
   createData(
+    2,
+    '08 Jul, 2020',
+    'Water Supply',
+    'water-supply.csv',
+    94.39,
+  ),  createData(
     3,
-    '16 Mar, 2019',
-    'Michael Jackson',
-    'Gary, IN',
-    'AMEX ⠀•••• 2000',
-    654.39,
+    '11 Sept, 2020',
+    'UK Electricity',
+    'electricity-uk.csv',
+    1294.39,
   ),
   createData(
     4,
-    '15 Mar, 2019',
-    'Bruce Springsteen',
-    'Long Branch, NJ',
-    'VISA ⠀•••• 5919',
-    212.79,
+    '08 Oct, 2020',
+    'Material Use',
+    'material-use.csv',
+    79.88,
   ),
 ];
 
@@ -62,7 +63,6 @@ export default function Orders() {
             <TableCell>Date</TableCell>
             <TableCell>Name</TableCell>
             <TableCell>Link to file</TableCell>
-            {/* <TableCell>Payment Method</TableCell> */}
             <TableCell align="right">tCO2e</TableCell>
           </TableRow>
         </TableHead>
@@ -71,9 +71,8 @@ export default function Orders() {
             <TableRow key={row.id}>
               <TableCell>{row.date}</TableCell>
               <TableCell>{row.name}</TableCell>
-              <TableCell>{row.shipTo}</TableCell>
-              {/* <TableCell>{row.paymentMethod}</TableCell> */}
-              <TableCell align="right">{`$${row.amount}`}</TableCell>
+              <TableCell>{row.link}</TableCell>
+              <TableCell align="right">{row.amount}</TableCell>
             </TableRow>
           ))}
         </TableBody>

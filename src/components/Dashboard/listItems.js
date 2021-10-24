@@ -11,34 +11,36 @@ import BarChartIcon from '@mui/icons-material/BarChart';
 import LayersIcon from '@mui/icons-material/Layers';
 import AssignmentIcon from '@mui/icons-material/Assignment';
 import Button from "components/CustomButtons/Button.js";
+import { Link } from "react-router-dom";
+
 
 
 export const mainListItems = (
   <div>
-    <ListItemButton href="#dashboard">
+    <ListItem component={Link} to="/profile-page">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
-    </ListItemButton>
-    <ListItemButton href="#leaderboard">
+    </ListItem>
+    <ListItem component={Link} to="/profile-page-leaderboard">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="Leaderboard" />
-      </ListItemButton>
-    <ListItemButton href="#reports">
+      </ListItem>
+      <ListItem component={Link} to="/profile-page-calculate">
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
-      <ListItemText primary="Reports" />
-      </ListItemButton>
-    <ListItemButton href="#climate-action">
+      <ListItemText primary="Carbon Calculator" />
+      </ListItem>
+      <ListItem component={Link} to="/market-place">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Climate action" />
-      </ListItemButton>
+      </ListItem>
   </div>
 );
 
