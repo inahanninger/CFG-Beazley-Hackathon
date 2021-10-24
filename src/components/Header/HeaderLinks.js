@@ -50,16 +50,23 @@ export default function HeaderLinks(props) {
               target="_blank"
               className={classes.dropdownLink}
             >
-              Get involved
+              Our methodology
             </a>,
+            <a
+            href=""
+            target="_blank"
+            className={classes.dropdownLink}
+          >
+            FAQs
+          </a>,
           ]}
         />
       </ListItem>
         <ListItem className={classes.listItem}>
             <Button
-              href="#pablo"
+              href="#"
               className={classes.navLink}
-              onClick={(e) => e.preventDefault()}
+              onClick={() => history.push("/market-page")}
               color="transparent"
             >
               Discover

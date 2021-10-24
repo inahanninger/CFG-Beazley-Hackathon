@@ -8,10 +8,7 @@ import "assets/scss/material-kit-react.scss?v=1.10.0";
 // pages for this product
 import Components from "./views/Components/Components.js";
 import LandingPage from "./views/LandingPage/LandingPage.js";
-import ProfilePageOld from "./views/ProfilePage/ProfilePageOld.js";
 import LoginPage from "./views/LoginPage/LoginPage.js";
-import RegisterPage from "views/RegisterPage/RegisterPage.js";
-import RegistrationPage from "./views/RegistrationPage/RegistrationPage.js";
 import MarketPage from "views/MarketPage/MarketPage.js";
 import RegistrationPage from './views/RegistrationPage/RegistrationPage.js';
 import ProfilePage from "views/ProfilePage/ProfilePage.js";
@@ -31,7 +28,6 @@ ReactDOM.render(
       <Route path="/registration" component={RegistrationPage}></Route>
       <Route path="/profile-page-calculate" component={ProfilePageCalculate}></Route>
       <Route path="/profile-page-leaderboard" component={Leaderboard}></Route>
-      <Route path="/" component={Components} />
     </Switch>
   </Router>,
   document.getElementById("root")

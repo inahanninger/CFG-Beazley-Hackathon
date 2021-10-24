@@ -35,7 +35,7 @@ export const mainListItems = (
       </ListItemIcon>
       <ListItemText primary="Carbon Calculator" />
       </ListItem>
-      <ListItem component={Link} to="/market-place">
+      <ListItem component={Link} to="/market-page">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
