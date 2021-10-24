@@ -9,9 +9,9 @@ const styles = {
   grid: {
     position: "relative",
     width: "100%",
-    minHeight: "3px",
-    paddingRight: "15px",
-    paddingLeft: "15px",
+    minHeight: "5px",
+    paddingRight: "25px",
+    paddingLeft: "25px",
     flexBasis: "auto",
   },
 };

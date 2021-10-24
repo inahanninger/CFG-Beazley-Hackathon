@@ -16,9 +16,9 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "assets/img/emitwise1.png";
+import team2 from "assets/img/globalthermostat.png";
+import team3 from "assets/img/weforest.png";
 
 const useStyles = makeStyles(styles);
 
@@ -31,129 +31,73 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h2 className={classes.title}>In partnership with </h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team1} alt="..." className={imageClasses} />
+                <img
+                  src={team1}
+                  alt="emitwiselogo"
+                  width="160px"
+                  height="130px"
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Emitwise
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Carbon Accounting </small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  We provide solutions to meet the sustainability challenges
+                  your business faces today.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
+            </Card>
+          </GridItem>
+          <GridItem xs={14} sm={14} md={8}>
+            <Card plain>
+              <GridItem xs={14} sm={14} md={8} className={classes.itemGrid}>
+                <img src={team2} alt="globalthermostatlogo" />
+              </GridItem>
+              <h4 className={classes.cardTitle}>
+                Global Thermostat
+                <br />
+                <small className={classes.smallTitle}>
+                  Carbon Removal Technology
+                </small>
+              </h4>
+              <CardBody>
+                <p className={classes.description}>
+                  GT economically captures and concentrates CO2, helping to
+                  close the global carbon cycle.
+                </p>
+              </CardBody>
             </Card>
           </GridItem>
           <GridItem xs={12} sm={12} md={4}>
             <Card plain>
               <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team2} alt="..." className={imageClasses} />
+                <img
+                  src={team3}
+                  alt="weforestlogo"
+                  width="220px"
+                  height="120px"
+                />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                We Forest
                 <br />
-                <small className={classes.smallTitle}>Designer</small>
+                <small className={classes.smallTitle}>Carbon Offset</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  To conserve and restore the ecological integrity of forests
+                  and landscapes.
                 </p>
               </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-linkedin"} />
-                </Button>
-              </CardFooter>
-            </Card>
-          </GridItem>
-          <GridItem xs={12} sm={12} md={4}>
-            <Card plain>
-              <GridItem xs={12} sm={12} md={6} className={classes.itemGrid}>
-                <img src={team3} alt="..." className={imageClasses} />
-              </GridItem>
-              <h4 className={classes.cardTitle}>
-                Kendall Jenner
-                <br />
-                <small className={classes.smallTitle}>Model</small>
-              </h4>
-              <CardBody>
-                <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
-                </p>
-              </CardBody>
-              <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
-              </CardFooter>
             </Card>
           </GridItem>
         </GridContainer>

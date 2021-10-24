@@ -1,46 +1,37 @@
 import React from "react";
 // nodejs library that concatenates classes
 import classNames from "classnames";
+// react components for routing our app without refresh
+import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 
-// @material-ui/icons
-
-// core components
-import Header from "components/Header/Header.js";
-import Footer from "components/Footer/Footer.js";
+// sections for this page
+import HeaderLinks from "components/Header/HeaderLinks.js";
+import SectionPills from "../Components/Sections/SectionPills";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import Button from "components/CustomButtons/Button.js";
-import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
+// @material-ui/icons
+// core components
+import Header from "components/Header/Header.js";
+import Footer from "components/Footer/Footer.js";
 
-import styles from "assets/jss/material-kit-react/views/landingPage.js";
-import SectionCarousel from "../Components/Sections/SectionCarousel.js";
-
-// Sections for this page
-import TeamSection from "./Sections/TeamSection.js";
-// import SectionCompletedExamples from "../Components/Sections/SectionCompletedExamples.js";
-import ProductSection from "./Sections/ProductSection.js";
-import WorkSection from "./Sections/WorkSection.js";
-
-const dashboardRoutes = [];
+import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
 
-export default function LandingPage(props) {
+export default function MarketPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
     <div>
       <Header
-        color="transparent"
-        routes={dashboardRoutes}
         brand="Avertech"
         rightLinks={<HeaderLinks />}
         fixed
+        color="transparent"
         changeColorOnScroll={{
           height: 400,
           color: "white",
@@ -62,13 +53,9 @@ export default function LandingPage(props) {
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <div className={classes.container}>
-          <ProductSection />
-          <WorkSection />
-          <SectionCarousel />
-          <TeamSection />
-        </div>
+        <SectionPills />
       </div>
+
       <Footer />
     </div>
   );

@@ -19,7 +19,7 @@ const navPillsStyle = (theme) => ({
     fontWeight: "500",
     position: "relative",
     display: "block",
-    color: "inherit",
+    color: "green",
   },
   flexContainer: {
     [theme.breakpoints.down("xs")]: {

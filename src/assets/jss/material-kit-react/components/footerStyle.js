@@ -35,7 +35,7 @@ const footerStyle = {
   },
   footerWhiteFont: {
     "&,&:hover,&:focus": {
-      color: "#FFFFFF",
+      color: "green",
     },
   },
   container,
@@ -54,6 +54,7 @@ const footerStyle = {
     height: "18px",
     position: "relative",
     top: "3px",
+    color: "green",
   },
 };
 export default footerStyle;
