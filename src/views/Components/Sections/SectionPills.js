@@ -6,179 +6,197 @@ import { makeStyles } from "@material-ui/core/styles";
 import Dashboard from "@material-ui/icons/Dashboard";
 import Schedule from "@material-ui/icons/Schedule";
 import List from "@material-ui/icons/List";
+import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
+// import WorkIcon from "@material-ui/icons/WorkIcon";
+import WorkIcon from "@mui/icons-material/Work";
+//import images
+import Emitwise from "assets/img/emitwise1.png";
+import Emitwise1 from "assets/img/emitwise-main-logo.svg";
 
+import GlobalThermostat from "assets/img/globalthermostat.png";
+import WeForest from "assets/img/weforest.png";
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
+import { AccountBox, ShoppingCartOutlined } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
 export default function SectionPills() {
   const classes = useStyles();
+
   return (
     <div className={classes.section}>
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3>Navigation Pills</h3>
+            <h3>Climate solutions</h3>
           </div>
-          <div className={classes.title}>
-            <h3>
-              <small>With Icons</small>
-            </h3>
-          </div>
+
           <GridContainer>
             <GridItem xs={12} sm={12} md={8} lg={6}>
               <NavPills
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
+                    tabButton: "Profile",
+                    tabIcon: AccountBox,
                     tabContent: (
                       <span>
                         <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
+                          Emitwise is a carbon accounting platform that allows
+                          you to measure, report and reduce your carbon
+                          footprint. Their main business mission is to reverse
+                          climate change through the use innovative technology.
                         </p>
                         <br />
+                      </span>
+                    ),
+                  },
+                  {
+                    tabButton: "Service",
+                    tabIcon: WorkIcon,
+                    tabContent: (
+                      <span>
                         <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
+                          Emitwise will provide you with an automated carbon
+                          accounting service that will assist you in measuring,
+                          reporting and reducing your company’s carbon
+                          footprint.
                         </p>
                       </span>
                     ),
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "Purchase",
+                    tabIcon: ShoppingCartOutlined,
                     tabContent: (
                       <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    ),
-                  },
-                  {
-                    tabButton: "Tasks",
-                    tabIcon: List,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
+                        <a href="/home">Purchase</a>
                       </span>
                     ),
                   },
                 ]}
               />
             </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
+            <GridItem xs={12} sm={12} md={8} lg={6}>
+              <img src={Emitwise1} alt="emitwiselogo"></img>
+            </GridItem>
+          </GridContainer>
+          <hr />
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={8} lg={6}>
               <NavPills
-                color="rose"
-                horizontal={{
-                  tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 },
-                }}
+                color="primary"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
+                    tabButton: "Profile",
+                    tabIcon: AccountBox,
                     tabContent: (
                       <span>
                         <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
+                          Global Thermostat uses breakthrough technology to
+                          economically capture and concentrate CO2 emissions.
+                          Their mission is to reduce harmful emissions and help
+                          combat the global carbon cycle crisis through storing
+                          and recycling CO2 for the use of multiple large &
+                          growing industries.
                         </p>
                         <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
                       </span>
                     ),
                   },
                   {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
+                    tabButton: "Service",
+                    tabIcon: WorkIcon,
                     tabContent: (
                       <span>
                         <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
+                          Global Thermostat will supply you with recycled CO2 at
+                          affordable prices.
                         </p>
                         <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
+                      </span>
+                    ),
+                  },
+                  {
+                    tabButton: "Purchase",
+                    tabIcon: ShoppingCartOutlined,
+                    tabContent: (
+                      <span>
+                        <br />
                       </span>
                     ),
                   },
                 ]}
               />
+            </GridItem>
+            <GridItem xs={12} sm={12} md={8} lg={6}>
+              <img src={GlobalThermostat} alt="globalthermostatlogo"></img>
+            </GridItem>
+          </GridContainer>
+          <hr />
+          <br />
+          <GridContainer>
+            <GridItem xs={12} sm={12} md={8} lg={6}>
+              <NavPills
+                color="primary"
+                tabs={[
+                  {
+                    tabButton: "Profile",
+                    tabIcon: AccountBox,
+                    tabContent: (
+                      <span>
+                        <p>
+                          WeForest Is an international NGO, that specialises in
+                          the restoration of forest landscapes in the tropics.
+                          This is done through engaging communities to implement
+                          lasting forest restoration solution and ensuring that
+                          “forests are sustainably managed for climate and
+                          humanity”.
+                        </p>
+                      </span>
+                    ),
+                  },
+                  {
+                    tabButton: "Service",
+                    tabIcon: WorkIcon,
+                    tabContent: (
+                      <span>
+                        <p>
+                          A Donation to WeForest will allow you to:
+                          <ul>
+                            <li>Offset your carbon footprint </li>
+                            <li>Fund Scientific research </li>
+                            <li>
+                              {" "}
+                              Sponsor one of their many forest restoration
+                              projects.
+                            </li>
+                          </ul>
+                        </p>
+                        <br />
+                      </span>
+                    ),
+                  },
+                  {
+                    tabButton: "Purchase",
+                    tabIcon: ShoppingCartOutlined,
+                    tabContent: (
+                      <span>
+                        <p>Purchase</p>
+                        <br />
+                      </span>
+                    ),
+                  },
+                ]}
+              />
+            </GridItem>
+            <GridItem xs={12} sm={12} md={8} lg={6}>
+              <img src={WeForest} alt="weforestlogo"></img>
             </GridItem>
           </GridContainer>
         </div>

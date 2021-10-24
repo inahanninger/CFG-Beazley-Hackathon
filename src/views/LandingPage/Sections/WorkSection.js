@@ -9,60 +9,54 @@ import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import CustomInput from "components/CustomInput/CustomInput.js";
 import Button from "components/CustomButtons/Button.js";
+import classNames from "classnames";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/workStyle.js";
 
 const useStyles = makeStyles(styles);
 
-export default function WorkSection() {
+export default function WorkSection(props) {
   const classes = useStyles();
+  const { whiteFont } = props;
+  const footerClasses = classNames({
+    [classes.footer]: true,
+    [classes.footerWhiteFont]: whiteFont,
+  });
+  const aClasses = classNames({
+    [classes.a]: true,
+    [classes.footerWhiteFont]: whiteFont,
+  });
+  const styleForMission = {
+    color: "green",
+  };
+
   return (
     <div className={classes.section}>
       <GridContainer justify="center">
         <GridItem cs={12} sm={12} md={8}>
           <h2 className={classes.title}>OUR MISSION</h2>
           <h4 className={classes.description}>
-            We are a mission-led online platform which helps businesses to get
-            to net zero by measuring and reducing carbon footprint in
-            partnership with leading tech enterprises.
+            We are a mission-led end-to-end digital platform which helps
+            businesses{" "}
+            <a
+              href="#"
+              className={aClasses}
+              target="_blank"
+              style={styleForMission}
+            >
+              reach net zero
+            </a>{" "}
+            by measuring and{" "}
+            <a
+              href="#"
+              className={aClasses}
+              target="_blank"
+              style={styleForMission}
+            >
+              reducing carbon footprint
+            </a>{" "}
+            in partnership with leading tech enterprises.
           </h4>
-          {/* <form>
-            <GridContainer>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Name"
-                  id="name"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
-                />
-              </GridItem>
-              <GridItem xs={12} sm={12} md={6}>
-                <CustomInput
-                  labelText="Your Email"
-                  id="email"
-                  formControlProps={{
-                    fullWidth: true,
-                  }}
-                />
-              </GridItem>
-              <CustomInput
-                labelText="Your Message"
-                id="message"
-                formControlProps={{
-                  fullWidth: true,
-                  className: classes.textArea,
-                }}
-                inputProps={{
-                  multiline: true,
-                  rows: 5,
-                }}
-              />
-              <GridItem xs={12} sm={12} md={4}>
-                <Button color="primary">Send Message</Button>
-              </GridItem>
-            </GridContainer>
-          </form> */}
         </GridItem>
       </GridContainer>
     </div>
