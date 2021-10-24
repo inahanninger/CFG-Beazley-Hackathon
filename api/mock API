@@ -1,0 +1,6 @@
+company_id,company_name,city,industry,nb_employees,size_office
+1,Baba,,retail,1200,3000
+2,Cece,,restauration,50,600
+3,Didi,,biotech,600,1000
+4,Fofo,,car,35000,120000
+5,Gugu,,tourism,120,720
