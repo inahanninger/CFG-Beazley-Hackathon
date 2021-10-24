@@ -38,7 +38,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Measure"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Calculate and verify your carbon footprint"
               icon={AssessmentOutlineIcon}
               iconColor="success"
               vertical
@@ -47,7 +47,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Offset"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Offset your carbon footprint by supporting reforestation, renewable energy installation projects"
               icon={SpaOutlinedIcon}
               iconColor="success"
               vertical
@@ -56,7 +56,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Remove"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Remove your carbon footprint with negative emissions technologies (NET) which absorb CO2"
               icon={ThermostatOutlinedIcon}
               iconColor="success"
               vertical
@@ -65,7 +65,7 @@ export default function ProductSection() {
           <GridItem xs={12} sm={12} md={4}>
             <InfoArea
               title="Share"
-              description="Divide details about your product or agency work into parts. Write a few lines about each one. A paragraph describing a feature will be enough."
+              description="Gain recognition as a sustainable leader through our interactive track and rewards scoreboard "
               icon={ShareOutlinedIcon}
               iconColor="success"
               vertical

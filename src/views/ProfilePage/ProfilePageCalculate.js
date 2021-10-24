@@ -16,7 +16,9 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import profile from "assets/img/beazley.png";
+import method from "assets/img/emissionsscope.png";
 import flowchart from "assets/img/emitwise-calculator.png";
+
 
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -27,15 +29,11 @@ import { mainListItems, secondaryListItems } from 'components/Dashboard/listItem
 import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
 import Divider from '@mui/material/Divider';
 import IconButton from '@mui/material/IconButton';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import LanguageIcon from '@mui/icons-material/Language';
 import Box from '@mui/material/Box';
 import Orders from 'components/Dashboard/Orders.js';
 import Paper from '@mui/material/Paper';
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
-
+import { DropzoneArea } from 'material-ui-dropzone';
 
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
@@ -131,7 +129,7 @@ export default function ProfilePageCalculate(props) {
                     <h3 className={classes.title}>Calculate your carbon footprint</h3>
                   </div>
                 </div>
-                <SnackbarContent
+                {/* <SnackbarContent
                   message={
                     <span>
                       <b>INFO ALERT:</b> You{"'"}re missing data for 2021, please upload them now!
@@ -140,11 +138,31 @@ export default function ProfilePageCalculate(props) {
                   close
                   color="info"
                   icon="info_outline"
-                />
+                /> */}
                 <Box >
-                  <img src={flowchart} height="300px" width="1090px"  />
+                <div className={classes.description}>
+                    <h3 className={classes.subtitle}>Our Method</h3>
+                      <img src={method} height="450px" width="500px" marginLeft="10px" />
+                  </div>
                 </Box>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                <div className={classes.description1}>
+                    <p>
+                    “Carbon” is generally used for greenhouse gas emissions = 7 Kyoto gases (CO2, CH4, N20, SF6, HFCs, PFCs, NF3) reported as CO2(e).
+The carbon emissions calculator combines the following metrics to provide a highly accurate representation of your current carbon footprint. 
+We’ve partnered with Emitwise to produce a range of usual visual indicators for your current status that accounts for the following factors:
+                    <ul>
+                    <li>Emissions scope (1/2/3) – determined by the source of emissions such as whether it originates directly from vehicles, on-site energy use, petrol fleet vehicles or indirectly from cooling and steam used in running a business, water use and the wider supply chain.
+                    </li>
+                    <li> Period of data monitoring you can provide – we recommend a minimum of 12 months’ emissions data.</li>
+                    <li>Conversion factors – dependent on the emissions source, which convert the emissions activity to units of ‘carbon’ produced.</li>
+                    </ul>
+                    </p>
+                  </div>
+                  <h3 className={classes.subtitle}>Upload your datasets:</h3>
+                  <DropzoneArea
+                    onChange={(files) => console.log('Files:', files)}
+                    />
+                <Paper sx={{ p: 4, display: 'flex', flexDirection: 'column'}}>
                   <Orders />
                 </Paper>
                 </GridItem>

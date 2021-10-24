@@ -35,12 +35,14 @@ import Box from '@mui/material/Box';
 import Orders from 'components/Dashboard/Orders.js';
 import Paper from '@mui/material/Paper';
 import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+import LeaderTable from "./LeaderTable";
+import trophy from "assets/img/leaderboard.jpg";
+
 
 
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import Dashboard from "components/Dashboard/Dashboard";
-import Leaderboard from './Leaderboard';
 
 const useStyles = makeStyles(styles);
 
@@ -109,17 +111,21 @@ export default function Leaderboard(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div>
-        <GridContainer justify="center">
+        <GridContainer justify="center" >
               <GridItem xs={12} sm={12} md={8}>
+              <div className={classes.profile}>
+                  <div>
+                    <img src={trophy} alt="..." className={imageClasses} />
+                  </div>
                   <div className={classes.name}>
                     <h3 className={classes.title}>Leaderboard</h3>
                   </div>
-                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <Orders />
-                </Paper>
+                </div>
+                <div className={classes.leaderboard}>
+                 <LeaderTable/>
+                </div>
                 </GridItem>
             </GridContainer>
-
         </div>
       </div>
       </Box>

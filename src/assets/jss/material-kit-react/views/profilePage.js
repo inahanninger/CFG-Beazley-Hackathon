@@ -42,6 +42,16 @@ const profilePageStyle = {
     minHeight: "32px",
     textDecoration: "none",
   },
+  subtitle: {
+    ...title,
+    display: "inline-block",
+    position: "relative",
+    marginTop: "20px",
+    minHeight: "32px",
+    textDecoration: "none",
+    fontWeight: "400",
+    fontFamily: "Roboto Slab"
+  },
   socials: {
     marginTop: "0",
     width: "100%",
@@ -57,6 +67,10 @@ const profilePageStyle = {
     margin: "20px auto 50px auto",
     textAlign: "center",
   },
+  leaderboard: {
+    marginTop: "40px",
+    marginBottom: "60px"
+  }
 };
 
 export default profilePageStyle;
