@@ -1,5 +1,6 @@
 import * as React from 'react';
 import ListItem from '@mui/material/ListItem';
+import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import ListSubheader from '@mui/material/ListSubheader';
@@ -14,30 +15,30 @@ import Button from "components/CustomButtons/Button.js";
 
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItemButton href="#dashboard">
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
-    </ListItem>
-    <ListItem button>
+    </ListItemButton>
+    <ListItemButton href="#leaderboard">
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="Leaderboard" />
-    </ListItem>
-    <ListItem button>
+      </ListItemButton>
+    <ListItemButton href="#reports">
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Reports" />
-    </ListItem>
-    <ListItem button>
+      </ListItemButton>
+    <ListItemButton href="#climate-action">
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
       <ListItemText primary="Climate action" />
-    </ListItem>
+      </ListItemButton>
   </div>
 );
 

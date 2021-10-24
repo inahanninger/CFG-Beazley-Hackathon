@@ -21,6 +21,7 @@ import CustomInput from "components/CustomInput/CustomInput.js";
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 import image from "assets/img/avertechbg2.jpg";
 import { Lock, LockOpen } from "@material-ui/icons";
+import { useHistory } from 'react-router-dom';
 
 const useStyles = makeStyles(styles);
 
@@ -30,6 +31,7 @@ export default function LoginPage(props) {
     setCardAnimation("");
   }, 700);
   const classes = useStyles();
+  const history = useHistory();
   const { ...rest } = props;
   return (
     <div>
@@ -107,7 +109,7 @@ export default function LoginPage(props) {
                     />
                   </CardBody>
                   <CardFooter className={classes.cardFooter}>
-                    <Button color="rose">Login</Button>
+                    <Button color="rose" onClick={() => history.push("/profile-page")}>Login</Button>
                   </CardFooter>
                 </form>
               </Card>

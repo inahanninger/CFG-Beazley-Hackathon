@@ -1,7 +1,7 @@
 import { defaultFont } from "assets/jss/material-kit-react.js";
 
 import tooltip from "assets/jss/material-kit-react/tooltipsStyle.js";
-
+const greenColor = "#549e39";
 const headerLinksStyle = (theme) => ({
   list: {
     ...defaultFont,
@@ -91,8 +91,8 @@ const headerLinksStyle = (theme) => ({
     backgroundColor: "rgba(255, 255, 255, 0.1)",
   },
   icons: {
-    width: "20px",
-    height: "20px",
+    width: "40px",
+    height: "40px",
     marginRight: "3px",
   },
   socialIcons: {
