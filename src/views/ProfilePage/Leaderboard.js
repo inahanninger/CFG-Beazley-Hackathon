@@ -16,6 +16,8 @@ import GridItem from "components/Grid/GridItem.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import Parallax from "components/Parallax/Parallax.js";
 import profile from "assets/img/beazley.png";
+import flowchart from "assets/img/emitwise-calculator.png";
+
 import { styled, createTheme, ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
 import MuiDrawer from '@mui/material/Drawer';
@@ -30,14 +32,15 @@ import TwitterIcon from '@mui/icons-material/Twitter';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LanguageIcon from '@mui/icons-material/Language';
 import Box from '@mui/material/Box';
-import Avatar from '@mui/material/Avatar';
-import Stack from '@mui/material/Stack';
-import treebadge from 'assets/img/tree-badge.jpg';
-import award from 'assets/img/award-medal.jpg';
+import Orders from 'components/Dashboard/Orders.js';
+import Paper from '@mui/material/Paper';
+import SnackbarContent from "components/Snackbar/SnackbarContent.js";
+
 
 
 import styles from "assets/jss/material-kit-react/views/profilePage.js";
 import Dashboard from "components/Dashboard/Dashboard";
+import Leaderboard from './Leaderboard';
 
 const useStyles = makeStyles(styles);
 
@@ -66,7 +69,7 @@ const Drawer = styled(MuiDrawer, { shouldForwardProp: (prop) => prop !== 'open' 
   }),
 );
 
-export default function ProfilePage(props) {
+export default function Leaderboard(props) {
   const classes = useStyles();
   const { ...rest } = props;
   const imageClasses = classNames(
@@ -108,41 +111,13 @@ export default function ProfilePage(props) {
         <div>
         <GridContainer justify="center">
               <GridItem xs={12} sm={12} md={8}>
-                <div className={classes.profile}>
-                  <div>
-                    <img src={profile} alt="..." className={imageClasses} />
-                  </div>
                   <div className={classes.name}>
-                    <h3 className={classes.title}>Beazley</h3>
-                    <h6>INSURANCE</h6>
-                    <Button justIcon link className={classes.margin5} href="https://www.beazley.com/london_market.html">
-                      <LanguageIcon/>
-                    </Button>
-                    <Button justIcon link className={classes.margin5} href="https://twitter.com/BeazleyGroup">
-                      <TwitterIcon></TwitterIcon>
-                    </Button>
-                    <Button justIcon link className={classes.margin5}>
-                      <InstagramIcon></InstagramIcon>
-                    </Button>
-                    <Button justIcon link className={classes.margin5} href="https://www.facebook.com/beazleyinsurance/">
-                      <FacebookIcon ></FacebookIcon>
-                    </Button>
+                    <h3 className={classes.title}>Leaderboard</h3>
                   </div>
-                  <div className={classes.description}>
-                    <p>
-                      We are a specialist insurer with three decades of experience in providing clients with the highest standards of underwriting and claims service worldwide. All our insurance businesses are rated A (Excellent) by A.M. Best.{" "}
-                    We are committed to doing the right thing for our people, partners and the planet. We are defined by our culture that values being bold, striving for better, and doing what’s right above all else.
-                  </p>
-                  </div>
-                </div>
-                <div className={classes.description}>
-                <Stack direction="row" spacing={1}>
-                    <Avatar alt="Tree" src={treebadge} sx={{ width: 120, height: 120 }}/>
-                    <Avatar alt="Award" src={award} sx={{ width: 110, height: 110 }} />
-                </Stack>
-                </div>
-                <Dashboard></Dashboard>
-              </GridItem>
+                <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
+                  <Orders />
+                </Paper>
+                </GridItem>
             </GridContainer>
 
         </div>
