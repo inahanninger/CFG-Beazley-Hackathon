@@ -69,7 +69,7 @@ export default function HeaderLinks(props) {
               onClick={() => history.push("/market-page")}
               color="transparent"
             >
-              Discover
+              Solutions
             </Button>
           </ListItem>
           <ListItem className={classes.listItem}>

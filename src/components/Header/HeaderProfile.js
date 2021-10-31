@@ -158,7 +158,7 @@ export default function HeaderProfile(props) {
               color="transparent"
               float="left"
             >
-              Discover
+              Solutions
             </Button>
       <IconButton color="inherit">
         <Badge badgeContent={4} color="secondary">

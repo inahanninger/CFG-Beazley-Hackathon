@@ -10,8 +10,8 @@ import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // import WorkIcon from "@material-ui/icons/WorkIcon";
 import WorkIcon from "@mui/icons-material/Work";
 //import images
-import Emitwise from "assets/img/emitwise1.png";
-import Emitwise1 from "assets/img/emitwise-main-logo.svg";
+import Emitwise1 from "assets/img/emitwise1.png";
+// import Emitwise1 from "assets/img/emitwise.png";
 
 import GlobalThermostat from "assets/img/globalthermostat.png";
 import WeForest from "assets/img/weforest.png";

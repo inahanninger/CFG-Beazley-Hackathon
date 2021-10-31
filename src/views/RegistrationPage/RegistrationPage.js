@@ -37,7 +37,7 @@ import { createTheme, ThemeProvider } from "@material-ui/core/styles";
 
 import styles from "assets/jss/material-kit-react/views/loginPage.js";
 
-import image from "assets/img/turbines.jpg";
+import image from "assets/img/bg3.jpg";
 
 const useStyles = makeStyles(styles);
 const theme = createTheme();
