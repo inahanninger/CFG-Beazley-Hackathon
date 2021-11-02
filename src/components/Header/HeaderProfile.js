@@ -26,7 +26,7 @@ import { Link } from "react-router-dom";
 import Header from "components/Header/Header.js";
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import { NotificationDropdown } from 'react-activity-feed';
-
+import { useHistory } from 'react-router-dom';
 
 
 // core components
@@ -35,9 +35,9 @@ import styles from "assets/jss/material-kit-react/components/headerStyle.js";
 const useStyles = makeStyles(styles);
 const drawerWidth = 240;
 
-
 export default function HeaderProfile(props) {
   const [open, setOpen] = React.useState(true);
+  const history = useHistory();
   const toggleDrawer = () => {
     setOpen(!open);
   };
@@ -82,7 +82,7 @@ export default function HeaderProfile(props) {
     [classes.absolute]: absolute,
     [classes.fixed]: fixed,
   });
-  const brandComponent = <Button className={classes.title}>{brand}</Button>;
+  const brandComponent = <Button className={classes.title} onClick={() => history.push("/home")}>{brand}</Button>;
   const AppBar = styled(MuiAppBar, {
     shouldForwardProp: (prop) => prop !== 'open',
   })(({ theme, open }) => ({

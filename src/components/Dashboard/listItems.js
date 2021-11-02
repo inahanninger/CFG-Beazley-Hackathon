@@ -62,7 +62,7 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="GHG Methodology" />
     </ListItem>
-    <ListItem button href="https://www.beazley.com/documents/2021/beazley-responsible-business-investment-policy.pdf">
+    <ListItem button component="a" href="https://www.beazley.com/documents/2021/beazley-responsible-business-investment-policy.pdf" style={linkStyle}>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>

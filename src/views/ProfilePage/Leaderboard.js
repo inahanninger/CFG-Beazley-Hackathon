@@ -121,7 +121,7 @@ export default function Leaderboard(props) {
                     <h3 className={classes.title}>Leaderboard</h3>
                   </div>
                 </div>
-                <div className={classes.leaderboard}>
+                <div className={classes.leaderboard} style={{ marginLeft: "-120px" }}>
                  <LeaderTable/>
                 </div>
                 </GridItem>
