@@ -15,8 +15,9 @@ const teamStyle = {
   },
   ...imagesStyle,
   itemGrid: {
-    marginLeft: "12px",
+    marginLeft: "45px",
     marginRight: "15px",
+    padding: "5px",
   },
   cardTitle,
   smallTitle: {

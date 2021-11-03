@@ -154,42 +154,42 @@ button.slick-arrow.slick-next {
   z-index: 2;
   opacity: 0.5;
 }
-.slick-prev {
-  left: 0;
-  &::before {
-    content: "\f053";
-    font-weight: 600;
-    font-family: Font Awesome\ 5 Free;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    color: white;
-    font-size: 30px;
-    width: 100%;
-  }
-}
-.slick-next {
-  right: 0;
-  &::before {
-    content: "\f054";
-    font-weight: 600;
-    font-family: Font Awesome\ 5 Free;
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
-    line-height: 1;
-    color: #fff;
-    font-size: 30px;
-    width: 100%;
-  }
-}
+// .slick-prev {
+//   left: 0;
+//   &::before {
+//     content: "\f053";
+//     font-weight: 600;
+//     font-family: Font Awesome\ 5 Free;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     display: inline-block;
+//     font-style: normal;
+//     font-variant: normal;
+//     text-rendering: auto;
+//     line-height: 1;
+//     color: white;
+//     font-size: 30px;
+//     width: 100%;
+//   }
+// }
+// .slick-next {
+//   right: 0;
+//   &::before {
+//     content: "\f054";
+//     font-weight: 600;
+//     font-family: Font Awesome\ 5 Free;
+//     -moz-osx-font-smoothing: grayscale;
+//     -webkit-font-smoothing: antialiased;
+//     display: inline-block;
+//     font-style: normal;
+//     font-variant: normal;
+//     text-rendering: auto;
+//     line-height: 1;
+//     color: #fff;
+//     font-size: 30px;
+//     width: 100%;
+//   }
+// }
 .slick-list {
   z-index: 1;
 }

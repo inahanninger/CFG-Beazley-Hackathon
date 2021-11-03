@@ -9,9 +9,14 @@ import List from "@material-ui/icons/List";
 import ShoppingCartIcon from "@mui/icons-material/ShoppingCart";
 // import WorkIcon from "@material-ui/icons/WorkIcon";
 import WorkIcon from "@mui/icons-material/Work";
+import ElectricalServicesIcon from "@mui/icons-material/ElectricalServicesOutlined";
+
+// import NatureOutlined from "@mui/icons-material/NatureOutlined";
+
 //import images
 import Emitwise from "assets/img/emitwise1.png";
 import Emitwise1 from "assets/img/emitwise-main-logo.svg";
+import green from "@material-ui/core/colors/green";
 
 import GlobalThermostat from "assets/img/globalthermostat.png";
 import WeForest from "assets/img/weforest.png";
@@ -19,9 +24,10 @@ import WeForest from "assets/img/weforest.png";
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
 import NavPills from "components/NavPills/NavPills.js";
+import Button from "components/CustomButtons/Button.js";
 
 import styles from "assets/jss/material-kit-react/views/componentsSections/pillsStyle.js";
-import { AccountBox, ShoppingCartOutlined } from "@material-ui/icons";
+import { AccountBox, ShoppingCartOutlined, Nature } from "@material-ui/icons";
 
 const useStyles = makeStyles(styles);
 
@@ -74,9 +80,34 @@ export default function SectionPills() {
                     tabButton: "Purchase",
                     tabIcon: ShoppingCartOutlined,
                     tabContent: (
-                      <span>
-                        <a href="/home">Purchase</a>
-                      </span>
+                      <div>
+                        <GridItem>
+                          <Button> Helper account</Button>
+                          <br />
+                          <ElectricalServicesIcon /> 1 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 12 trees plants
+                          every month.
+                        </GridItem>
+                        <br />
+                        <GridItem>
+                          <Button>Booster account </Button>
+                          <br />
+                          <ElectricalServicesIcon /> 2 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 24 trees plants
+                          every month.
+                        </GridItem>
+                        <br />
+                        <GridItem>
+                          <Button>Mega account</Button> <br />
+                          <ElectricalServicesIcon /> 4 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 48 trees plants
+                          every month.
+                          <br />
+                        </GridItem>
+                      </div>
                     ),
                   },
                 ]}
@@ -126,9 +157,34 @@ export default function SectionPills() {
                     tabButton: "Purchase",
                     tabIcon: ShoppingCartOutlined,
                     tabContent: (
-                      <span>
+                      <div>
+                        <GridItem>
+                          <Button> Helper account</Button>
+                          <br />
+                          <ElectricalServicesIcon /> 1 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 12 trees plants
+                          every month.
+                        </GridItem>
                         <br />
-                      </span>
+                        <GridItem>
+                          <Button>Booster account </Button>
+                          <br />
+                          <ElectricalServicesIcon /> 2 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 24 trees plants
+                          every month.
+                        </GridItem>
+                        <br />
+                        <GridItem>
+                          <Button>Mega account</Button> <br />
+                          <ElectricalServicesIcon /> 4 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 48 trees plants
+                          every month.
+                          <br />
+                        </GridItem>
+                      </div>
                     ),
                   },
                 ]}
@@ -186,10 +242,34 @@ export default function SectionPills() {
                     tabButton: "Purchase",
                     tabIcon: ShoppingCartOutlined,
                     tabContent: (
-                      <span>
-                        <p>Purchase</p>
+                      <div>
+                        <GridItem>
+                          <Button> Helper account</Button>
+                          <br />
+                          <ElectricalServicesIcon /> 1 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 12 trees plants
+                          every month.
+                        </GridItem>
                         <br />
-                      </span>
+                        <GridItem>
+                          <Button>Booster account </Button>
+                          <br />
+                          <ElectricalServicesIcon /> 2 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 24 trees plants
+                          every month.
+                        </GridItem>
+                        <br />
+                        <GridItem>
+                          <Button>Mega account</Button> <br />
+                          <ElectricalServicesIcon /> 4 footprint reduced every
+                          year. <br />
+                          <Nature style={{ color: "green" }} /> 48 trees plants
+                          every month.
+                          <br />
+                        </GridItem>
+                      </div>
                     ),
                   },
                 ]}

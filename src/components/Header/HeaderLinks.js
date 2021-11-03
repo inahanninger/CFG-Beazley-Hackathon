@@ -42,47 +42,39 @@ export default function HeaderLinks(props) {
           }}
           buttonIcon={Apps}
           dropdownList={[
-            <Link to="/" className={classes.dropdownLink}>
+            <Link to="/team" className={classes.dropdownLink}>
               How it started
             </Link>,
-            <a
-              href=""
-              target="_blank"
-              className={classes.dropdownLink}
-            >
+            <a href="/team" target="_blank" className={classes.dropdownLink}>
               Our methodology
             </a>,
-            <a
-            href=""
-            target="_blank"
-            className={classes.dropdownLink}
-          >
-            FAQs
-          </a>,
+            <a href="" target="_blank" className={classes.dropdownLink}>
+              FAQs
+            </a>,
           ]}
         />
       </ListItem>
-        <ListItem className={classes.listItem}>
-            <Button
-              href="#"
-              className={classes.navLink}
-              onClick={() => history.push("/market-page")}
-              color="transparent"
-            >
-              Discover
-            </Button>
-          </ListItem>
-          <ListItem className={classes.listItem}>
-            <Button
-              href="/registration"
-              className={classes.registerNavLink}
-              onClick={() => handleClick}
-              color="rose"
-              round
-            >
-              Register
-            </Button>
-          </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="#"
+          className={classes.navLink}
+          onClick={() => history.push("/market-page")}
+          color="transparent"
+        >
+          Discover
+        </Button>
+      </ListItem>
+      <ListItem className={classes.listItem}>
+        <Button
+          href="/registration"
+          className={classes.registerNavLink}
+          onClick={() => handleClick}
+          color="rose"
+          round
+        >
+          Register
+        </Button>
+      </ListItem>
     </List>
   );
 }
