@@ -1,3 +1,4 @@
+
 import * as React from 'react';
 import { DataGrid, GridToolbar } from '@mui/x-data-grid';
 import { makeStyles } from '@mui/styles';
@@ -67,6 +68,7 @@ const columns = [
     });
 
 export default function BasicFilteringGrid() {
+
   const classes = useStyles();
 
   return (
@@ -82,9 +84,9 @@ export default function BasicFilteringGrid() {
             filterModel: {
               items: [
                 {
-                  columnField: 'industry',
-                  operatorValue: 'equals',
-                  value: 'Insurance',
+                  columnField: "industry",
+                  operatorValue: "equals",
+                  value: "Insurance",
                 },
               ],
             },

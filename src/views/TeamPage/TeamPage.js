@@ -5,6 +5,7 @@ import classNames from "classnames";
 import { Link } from "react-router-dom";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+
 // sections for this page
 import HeaderLinks from "components/Header/HeaderLinks.js";
 import SectionPills from "../Components/Sections/SectionPills";
@@ -18,10 +19,12 @@ import Header from "components/Header/Header.js";
 import Footer from "components/Footer/Footer.js";
 
 import styles from "assets/jss/material-kit-react/views/components.js";
+import AllTeamSection from "views/LandingPage/Sections/AllTeamSection";
+import TeamSection from "views/LandingPage/Sections/TeamSection";
 
 const useStyles = makeStyles(styles);
 
-export default function MarketPage(props) {
+export default function TeamPage(props) {
   const classes = useStyles();
   const { ...rest } = props;
   return (
@@ -42,9 +45,13 @@ export default function MarketPage(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Avertech</h1>
+                <h1 className={classes.title}>How it started</h1>
                 <h3 className={classes.subtitle}>
-                  Reaching net zero together for our planet.
+                  Amidst the common goal of tackling carbon emissions and with
+                  the mindset of collaborating with like-minded women in a real
+                  world issues, AverTech was born. Led with the expertise of Ina
+                  Hanninger and support from CFG & Beazley Hackathon mentors,
+                  AverTech has been operating since late 2021.
                 </h3>
               </div>
             </GridItem>
@@ -52,7 +59,7 @@ export default function MarketPage(props) {
         </div>
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
-        <SectionPills />
+        <AllTeamSection />
       </div>
 
       <Footer />
