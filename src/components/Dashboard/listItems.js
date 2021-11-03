@@ -13,29 +13,32 @@ import AssignmentIcon from '@mui/icons-material/Assignment';
 import Button from "components/CustomButtons/Button.js";
 import { Link } from "react-router-dom";
 
-
+const linkStyle = {
+  textDecoration: "none",
+  color: '#3c4858'
+};
 
 export const mainListItems = (
   <div>
-    <ListItem component={Link} to="/profile-page">
+    <ListItem component={Link} to="/profile-page" style={linkStyle}>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
       <ListItemText primary="Dashboard" />
     </ListItem>
-    <ListItem component={Link} to="/profile-page-leaderboard">
+    <ListItem component={Link} to="/profile-page-leaderboard" style={linkStyle}>
       <ListItemIcon>
         <PeopleIcon />
       </ListItemIcon>
       <ListItemText primary="Leaderboard" />
       </ListItem>
-      <ListItem component={Link} to="/profile-page-calculate">
+      <ListItem component={Link} to="/profile-page-calculate" style={linkStyle}>
       <ListItemIcon>
         <BarChartIcon />
       </ListItemIcon>
       <ListItemText primary="Carbon Calculator" />
       </ListItem>
-      <ListItem component={Link} to="/market-page">
+      <ListItem component={Link} to="/market-page" style={linkStyle}>
       <ListItemIcon>
         <LayersIcon />
       </ListItemIcon>
@@ -59,7 +62,7 @@ export const secondaryListItems = (
       </ListItemIcon>
       <ListItemText primary="GHG Methodology" />
     </ListItem>
-    <ListItem button href="https://www.beazley.com/documents/2021/beazley-responsible-business-investment-policy.pdf">
+    <ListItem button component="a" href="https://www.beazley.com/documents/2021/beazley-responsible-business-investment-policy.pdf" style={linkStyle}>
       <ListItemIcon>
         <AssignmentIcon />
       </ListItemIcon>

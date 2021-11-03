@@ -46,7 +46,7 @@ const profilePageStyle = {
     ...title,
     display: "inline-block",
     position: "relative",
-    marginTop: "20px",
+    marginTop: "10px",
     minHeight: "32px",
     textDecoration: "none",
     fontWeight: "400",
@@ -69,7 +69,8 @@ const profilePageStyle = {
   },
   leaderboard: {
     marginTop: "40px",
-    marginBottom: "60px"
+    marginBottom: "60px",
+    width: "1300px",
   }
 };
 

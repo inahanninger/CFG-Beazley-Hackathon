@@ -19,8 +19,9 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import { mainListItems, secondaryListItems } from './listItems';
 import Chart from './Chart';
 import Deposits from './Deposits';
-import Orders from './Orders';
+import Piechart from './Piechart';
 import NewsFeed from './NewsFeed';
+import Barchart from './Barchart'
 
 
 
@@ -42,12 +43,13 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 250,
                   }}
                 >
                   <Chart />
                 </Paper>
               </Grid>
+
               {/* Tonnes of CO2 Compensated */}
               <Grid item xs={12} md={4} lg={3}>
                 <Paper
@@ -55,17 +57,42 @@ function DashboardContent() {
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column',
-                    height: 240,
+                    height: 250,
                   }}
                 >
                   <Deposits />
                 </Paper>
               </Grid>
-              {/* Recent Orders */}
+
+            {/* Piechart */}
+            <Grid item xs={12} md={8} lg={4.9}>
+                <Paper
+                  sx={{
+                    p: 2,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: 300,
+                  }}
+                >
+                  <Piechart />
+                </Paper>
+              </Grid>
+              
+            
+              {/* bar */}
+              <Grid item xs={12} md={8} lg={7.1}>
+                <Paper
+                  sx={{
+                    p: 2,
+                    display: 'flex',
+                    flexDirection: 'column',
+                    height: 300,
+                  }}
+                >
+                  <Barchart/>
+                </Paper>
+              </Grid>
               <Grid item xs={12}>
-                {/* <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                  <Orders />
-                </Paper> */}
                 <NewsFeed/>
               </Grid>
             </Grid>

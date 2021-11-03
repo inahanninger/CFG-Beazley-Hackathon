@@ -54,27 +54,27 @@ export default function HeaderLinks(props) {
           ]}
         />
       </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="#"
-          className={classes.navLink}
-          onClick={() => history.push("/market-page")}
-          color="transparent"
-        >
-          Discover
-        </Button>
-      </ListItem>
-      <ListItem className={classes.listItem}>
-        <Button
-          href="/registration"
-          className={classes.registerNavLink}
-          onClick={() => handleClick}
-          color="rose"
-          round
-        >
-          Register
-        </Button>
-      </ListItem>
+        <ListItem className={classes.listItem}>
+            <Button
+              href="#"
+              className={classes.navLink}
+              onClick={() => history.push("/market-page")}
+              color="transparent"
+            >
+              Solutions
+            </Button>
+          </ListItem>
+          <ListItem className={classes.listItem}>
+            <Button
+              href="/registration"
+              className={classes.registerNavLink}
+              onClick={() => handleClick}
+              color="rose"
+              round
+            >
+              Register
+            </Button>
+          </ListItem>
     </List>
   );
 }
